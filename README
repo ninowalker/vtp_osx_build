@@ -1,0 +1,10 @@
+#
+# OSX VTP build/install scripts
+#
+
+For instructions visit: 
+http://nino.walker.googlepages.com/vterrainmacosxinstallscripts
+
+The scripts also respond to the --help option, e.g.:
+
+./download_dependencies.sh --help

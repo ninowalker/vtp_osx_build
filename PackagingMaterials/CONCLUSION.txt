@@ -1,0 +1,7 @@
+Thats it!  Applications are installed in:
+
+/Applications/VTerrain
+
+Please report bugs to the vtp-unix Yahoo! group.
+
+http://tech.groups.yahoo.com/group/vtp-unix/

@@ -1,0 +1,41 @@
+Hi mac users,
+
+A new version of the VTP software is available.  Download it at:
+http://www.vterrain.org/Download/
+
+Follow the instructions.  You must install fink (if you don't have it already), and run the fink libraries install script.  See the accompanying readme.
+
+These applications should run from a double click.
+
+NEW FEATURES/FIXES:
+- CManager. Barely tested.
+- Only depends on fink libraries. OSG is bundled with the apps in the Shared directory.
+- VTBuilder World Map displays.
+- No environment dependency for GDAL_DATA or PROJ ( I think... might be wrong. Not testable on my machine... :( )  Check the console if you have projection/gdal issues
+- Enviro window only redraws with a mouse event, so may seem twitchy.  Ben is working on a solution.
+
+REQUIREMENTS:
+1) OS X 10.4.6+, for Intel
+2) Notice "INTEL" above - you must have an Intel processor
+3) About 500MB free disk space
+
+KNOWN ISSUES:
+- CManager is barely tested.  Please send comments, bugs.
+- Binary bloat. Still producing binaries with lots of debug info.
+- Enviro logs some OpenGL state warnings profusely.  Not sure if it has any effect.
+- In VTBuilder, drawing a rectangle with the Area Tool seems to misbehave (vertically offset from drag point).  Just use the menu, "Area Tool -> Set to Layer Extents" as a work around.
+
+REPORTING BUGS:
+- PLEASE Send an email to nino.walker@gmail.com WITH the following information:
+
+1) System configuration, available from the finder's "About This Mac Dialog", e.g.:
+10.4.8, 2.16 GHz Intel Core 2 Duo, 2GB RAM
+
+2) Console output. VTP applications silently log to standard out.  You can see the log trace by opening the console application.  You'll find the VTP app output near the bottom, if you open it immediately.
+/Applications/Utilities/Console.app
+
+3) If the system crashes, include the crash log, e.g.:
+~/Library/Logs/CrashReporter/VTBuilder.crash.log
+
+(Obligatory) DISCLAIMER: 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
